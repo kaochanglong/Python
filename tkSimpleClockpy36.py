@@ -10,11 +10,15 @@ def update_timeText():
     # In this case, after method is used to call the update_timeText() function after 1 second
     win.after(1000, update_timeText)
 
+# To set up the window with  final mainloop()
 win = tk.Tk()
+# To set up the window title
 win.title("Simple Clock Example")
 
-# Create a timeText Label (a text box)
+# To create and setup a timeText Label (the format such as bg, fg,and font can be changed as you wish )
 timeText = tk.Label(win, bg= 'black', text="", fg='white', font=("Helvetica", 50))
 timeText.pack()
+# To call update_timeText() function
 update_timeText()
+# To set up the window with  final mainloop()
 win.mainloop()
