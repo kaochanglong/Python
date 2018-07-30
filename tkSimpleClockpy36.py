@@ -2,11 +2,12 @@ import tkinter as tk
 import time
 
 def update_timeText():
-    # Get the current time, note you can change the format as you wish
+    # To get the current time on your system, and the format can be changed as you wish
     current = time.strftime("%Y/%m/%d %H:%M:%S")
-    # Update the timeText Label box with the current time
+    # To update the timeText (in the tkinter Label box) with the current time
     timeText.configure(text=current)
-    # Call the update_timeText() function after 1 second
+    # After method in tkinter can be used to generate an event at a specific time
+    # In this case, after method is used to call the update_timeText() function after 1 second
     win.after(1000, update_timeText)
 
 win = tk.Tk()
