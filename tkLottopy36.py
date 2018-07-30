@@ -77,6 +77,6 @@ def Reset() :
 ButtonGet.configure( command = Pick )
 ButtonReset.configure( command = Reset )
 
-# To call the window
+# To call the window with  final mainloop()
 win.mainloop()
 
